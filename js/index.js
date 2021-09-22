@@ -3,7 +3,6 @@ button.addEventListener("click",validate)
 const email = document.querySelector("#email")
 const password = document.querySelector("#password")
 const a = document.querySelector("a")
-
 a.addEventListener("click",(event)=>{
     event.preventDefault()
     alert("Write anything in the password input!!")
