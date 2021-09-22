@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --a: #f8edeb;
+    --b: #fae1dd;
+    --c: #fcd5ce;
+    --d: #89fde4;
+    --e: #ece4db;
+    --f: #e8e8e4;
+}
+body{
+    background-color: var(--c);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.list{
+    width: 50vw;
+}
+h1{
+    margin: 2rem 0;
+    font-size: 5rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+.label{
+    display: none;
+}
+.input{
+    width: 100%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+.input:focus-visible{
+    outline: 0;
+}
+.inputCreator{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 5px solid rgb(255, 225, 170);
+    border-radius: .7rem;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-bottom: 3rem;
+}
+.inputCreator:focus-within{
+    border-color: rgb(255, 171, 15);
+}
+#title{
+    display: none;
+    padding: 1rem;
+}
+#taskInput{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.creatorI{
+    width: 100%;
+    font-size: 2rem;
+    padding: .2rem;
+    border: 1px solid transparent;
+}
+.creatorI:focus-visible{
+    outline: none;
+}
+.input-checkbox{
+    margin-right: 1rem;
+}
+#final{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#create{
+    display: none;
+    width: 5rem;
+    border-radius: 2rem;
+    border: 1px transparent solid;
+    padding: .5rem;
+    margin: .5rem;
+    cursor: pointer;
+    background-color: rgb(255, 166, 0);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
+}
+#create:hover{
+    background-color: rgba(255, 166, 0, 0.712);
+}
+#dateInput{
+    display: none;
+    height: 2rem;
+    margin: 0 1rem;
+}
+
+#list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: 4px solid black;
+    height: 10rem;
+    width: 20rem;
+    margin: 2rem 2rem 0 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+#pTask{
+    width: 100%;
+
+}
+#divCheckBox{
+    display: flex;
+    height: 100%;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem; 
+    border-right: 2px solid black;
+    background-color: var(--b);
+}
+#divContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;    
+    background-color: var(--a);
+}
+.listContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#divH2{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    height: 30%;
+    padding-top: 0.5rem;
+}
+#divP{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    padding: 0 0.7rem;
+    word-break: break-word;
+}
+#divDate{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 0.3rem;
+    padding-bottom: 0.3rem;
+}

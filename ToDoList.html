@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Be+Vietnam+Pro:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/ToDoList.css">
+    <title>Things 2 Do</title>
+</head>
+<body>
+        <div class="container">
+            <h1>Things 2 do:</h1>
+            <div class="list" id="list">
+                    <div class="inputCreator">
+                        <label for="title" class="label">Title</label>
+                        <input type="text" id="title" class="creatorI" placeholder="Title" autocomplete="off">
+                        <label for="taskInput" class="label">taskInput</label>
+                        <input type="text" id="taskInput" placeholder="Create a task..." class="creatorI" autocomplete="off">
+                        <div id="final">
+                            <label for="dateInput" class="label"></label>
+                            <input type="date" name="date" id="dateInput">
+                            <button id="create" class="button">Create</button>
+                        </div>
+                    </div>
+                <div class="listContent"></div>
+            </div>
+
+
+        </div>
+    <script src="./js/ToDoList.js"></script>
+</body>
+</html>
