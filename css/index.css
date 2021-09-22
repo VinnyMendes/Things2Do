@@ -9,12 +9,14 @@
     --e: #ece4db;
     --f: #e8e8e4;
 }
+body{
+    background-color: var(--c);
+}
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--c);
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
@@ -26,6 +28,7 @@
     width: 50rem;
     border-radius: 3rem;
     overflow: hidden;
+    margin: 0 2rem;
 }
 .apresentacao{
     display: flex;
@@ -85,4 +88,15 @@ a{
 }
 .button:hover{
     background-color: #89fde4b9;
+}
+@media(max-width:600px){
+    .login{
+        flex-direction: column;
+        height: 35rem;
+    }
+}
+@media(max-width:350px){
+    .login{
+        margin: 0;
+    }
 }
