@@ -18,6 +18,7 @@ body{
     align-items: center;
     justify-content: flex-start;
     font-family: 'Be Vietnam Pro', sans-serif;
+    padding-bottom: 10rem;
 }
 .list{
     width: 50vw;
@@ -108,7 +109,7 @@ h1{
     align-items: center;
     margin-bottom: 2rem;
     border: 4px solid black;
-    height: 10rem;
+    min-height: 12rem;
     width: 20rem;
     margin: 2rem 2rem 0 2rem;
     border-radius: 1rem;
@@ -146,22 +147,21 @@ h1{
     text-align: center;
     width: 100%;
     justify-content: center;
-    height: 30%;
-    padding-top: 0.5rem;
+    padding: 0.5rem 0;
+    word-break: break-word;
 }
 #divP{
     display: flex;
     width: 100%;
-    height: 60%;
+    height: 100%;
     padding: 0 0.7rem;
     word-break: break-word;
 }
 #divDate{
     display: flex;
     width: 100%;
-    height: 10%;
     justify-content: flex-end;
     align-items: flex-end;
     padding-right: 0.3rem;
-    padding-bottom: 0.3rem;
+    padding-bottom: .3rem;
 }
