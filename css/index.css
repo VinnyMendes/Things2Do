@@ -38,7 +38,7 @@ body{
     width: 100%;
     background-color: var(--a);
 }
-.form{
+form{
     height: 100%;
     width: 100%;
     background-color: var(--b);
