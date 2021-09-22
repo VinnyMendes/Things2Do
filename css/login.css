@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --a: #f8edeb;
+    --b: #fae1dd;
+    --c: #fcd5ce;
+    --d: #89fde4;
+    --e: #ece4db;
+    --f: #e8e8e4;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--c);
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30rem;
+    width: 50rem;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--a);
+}
+.form{
+    height: 100%;
+    width: 100%;
+    background-color: var(--b);
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+input{
+    margin: 0.5rem 0;
+}
+.input{
+    border-radius: 0.3rem;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    padding: 0.34rem;
+}
+.input:focus-visible{
+    outline: none;
+    box-shadow: 0 5px 2px -1px rgb(0, 247, 255);
+}
+.label{
+    font-size: 1.2rem;
+}
+#email{
+    margin-bottom: 1.4rem;
+}
+.conjunto{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: var(--d);
+}
+.button:hover{
+    background-color: #89fde4b9;
+}
