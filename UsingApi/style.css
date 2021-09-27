@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --a: #f8edeb;
+    --b: #fae1dd;
+    --c: #fcd5ce;
+    --d: rgba(255, 166, 0, 0.712);
+    --e: rgb(255, 166, 0);
+    --f: rgb(255, 225, 170);
+}
+body{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(1, 0, 53);
+}
+#tasks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#create{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 153, 255);
+    border: none;
+}
+#create:hover{
+    background-color: rgb(81, 185, 255);
+
+}
+.list-item{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    border: 3px solid black;
+    min-height: 10rem;
+    width: 20rem;
+    margin: 2rem 2rem 0 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.pTask{
+    width: 100%;
+}
+.divCheckBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    padding: 0 1rem; 
+    border-right: 2px solid black;
+    background-color: var(--b);
+}
+.divContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    background-color: var(--a);
+}
+.listContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.divH2{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0.7rem 0;
+    word-break: break-word;
+}
+.divP{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 0.7rem 0.5rem 0.7rem;
+    word-break: break-word;
+}
+.divDate{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 0.3rem;
+    padding-bottom: .3rem;
+}
+.date{
+    font-size: 0.7rem;
+}
+.delete{
+    cursor: pointer;
+    
+}
+
+.EDNALDO{
+    text-decoration: line-through;
+}
