@@ -31,7 +31,7 @@ function dismiss() {
     titleInput.setAttribute("style", "display:none;")
     createButton.setAttribute("style", "display:none;")
     dateInput.setAttribute("style", "display:none;")
-    creator.style.borderColor = "rgb(255, 225, 170)"
+    creator.style.borderColor = ""
 }
 
 function createItem(text) {
@@ -120,7 +120,12 @@ function addTask() {
         creator.style.borderColor = "red"
         return
     }
-    creator.style.borderColor = "rgb(255, 225, 170)"
+    if (task_info.my_task.trim().length <= 10){
+        alert("Description must be at least 10 characters long.")
+        taskInput.value = ""
+        taskInput.focus()
+        return
+    }
     contentArray.push(task_info)
     localStorage.setItem("tasks", JSON.stringify(contentArray));
 
@@ -131,5 +136,23 @@ function addTask() {
     dateInput.value = ""
 }
 
+const root = document.querySelector(":root")
+document.getElementById("dark").addEventListener("click",()=>{
+    root.style.setProperty("--a", "#2fb9eb");
+    root.style.setProperty("--b", "#7201ca");
+    root.style.setProperty("--c", "#022583");
+    root.style.setProperty("--d", "#2fb9eb");
+    root.style.setProperty("--e", "rgb(46 0 255)");
+    root.style.setProperty("--f", "rgb(55 78 255)");
+    document.querySelector("h1").style.color = "white"
 
-
+})
+document.getElementById("light").addEventListener("click",()=>{
+    root.style.setProperty("--a", "#f8edeb");
+    root.style.setProperty("--b", "#fae1dd");
+    root.style.setProperty("--c", "#fcd5ce");
+    root.style.setProperty("--d", "rgba(255, 166, 0, 0.712)");
+    root.style.setProperty("--e", "rgb(255, 166, 0)");
+    root.style.setProperty("--f", "rgb(255, 225, 170)");
+    document.querySelector("h1").style.color = ""
+})
