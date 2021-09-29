@@ -65,7 +65,11 @@ function createItem(text) {
         p.classList.toggle("EDNALDO")
         h2.classList.toggle("EDNALDO")
         date.classList.toggle("EDNALDO")
+        text.done = !text.done
+        localStorage.setItem("tasks", JSON.stringify(contentArray));
+        
     })
+    
 
     let img = document.createElement("img")
     img.className = "delete"
@@ -104,6 +108,13 @@ function createItem(text) {
     div.appendChild(divCheckBox)
     div.appendChild(divContent)
 
+    if(text.done){
+        p.classList.toggle("EDNALDO")
+        h2.classList.toggle("EDNALDO")
+        date.classList.toggle("EDNALDO")
+        checkBox.checked = true
+    }
+
     listContent.appendChild(div)
 
     dismiss()
@@ -115,6 +126,7 @@ function addTask() {
         my_title: titleInput.value,
         my_task: taskInput.value,
         my_date: dateInput.value,
+        done: false
     };
     if (!task_info.my_title.trim() || !task_info.my_task.trim() || !task_info.my_date.trim()) {
         creator.style.borderColor = "red"
